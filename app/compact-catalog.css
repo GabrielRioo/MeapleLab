@@ -1,0 +1,16 @@
+.game-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.game-card{border-radius:14px}
+.live-preview{height:190px}
+.live-preview iframe{width:250%;height:390px;transform:scale(.4)}
+.game-info{padding:20px 20px 18px}
+.game-info h3{margin:10px 0 7px;font-size:1.4rem}
+.game-info>p{min-height:66px;font-size:.86rem;line-height:1.5}
+.game-footer{gap:10px;margin-top:17px;padding-top:14px}
+.protected-preview{position:absolute;inset:34px 0 0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:radial-gradient(circle at 50% 35%,color-mix(in srgb,var(--accent),transparent 70%),transparent 38%),#171a1e;color:#fff}
+.protected-preview:hover strong{text-decoration:underline}
+.protected-mark{margin-bottom:8px;color:var(--accent);font-size:1.7rem;font-weight:950}
+.protected-preview strong{font-size:.9rem}
+.protected-preview small{margin-top:5px;color:#9ca4ad;font-size:.68rem;line-height:1.45}
+.live-label.protected i{background:#f4d35e;box-shadow:0 0 0 3px #f4d35e29}
+@media(max-width:1100px){.game-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:900px){.game-grid{grid-template-columns:1fr}.live-preview{height:230px}.live-preview iframe{width:200%;height:472px;transform:scale(.5)}.game-info{padding:22px 20px}.game-info>p{min-height:auto}}
